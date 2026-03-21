@@ -146,7 +146,7 @@ The agent generates:
 
 ## 1️⃣ Create Virtual Environment (PowerShell)
 
-```powershell
+```powershell (doesn't work well with python 3.14. use 3.12 or adjust below command based on the version of your python interpreter)
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
@@ -155,7 +155,7 @@ py -3.12 -m venv .venv
 
 ## 2️⃣ Install Dependencies
 
-```powershell
+```powershell 
 pip install langchain langchain-openai langchain-mcp-adapters python-dotenv
 ```
 

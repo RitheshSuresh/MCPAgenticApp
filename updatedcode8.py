@@ -1,0 +1,24 @@
+def greet_users(names):
+    for i in range(len(names)):
+        print("Hello " + names[i])
+
+
+def find_prime_numbers(numbers):
+    prime_numbers = []
+    for num in numbers:
+        if num > 1:
+            is_prime = True
+            for i in range(2, int(num ** 0.5) + 1):
+                if num % i == 0:
+                    is_prime = False
+                    break
+            if is_prime:
+                prime_numbers.append(num)
+    return prime_numbers
+
+
+names = ["Alice", "Bob", "Charlie"]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+greet_users(names)
+print(find_prime_numbers(numbers))
